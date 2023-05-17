@@ -16,12 +16,12 @@
 
 header{
     height: 65PX; /*  */ 
-    border: 1PX solid black;
+    border: 1PX solid rgb(0, 0, 0);
     display: flex;
     flex-direction: row; /* define a direção se e linha ou coluna */
     /* control+espaço ver opçoes */
     background-color: var(--cor1);
-
+    padding: 0 15px 0 15px;
 }
 
 .logo{
@@ -33,10 +33,13 @@ header{
     align-items: center;
     text-transform: uppercase;
     font-size: 25px;
-    margin-left: 5px;
 
 }
 
+.logo a {
+    text-decoration: none;
+    color: white;
+}
 
 nav {
     /*border: 2px solid black;*/
@@ -45,24 +48,25 @@ nav {
     /*background-color: green;*/
 }
 
-nav > div{
+/*nav > div{
     margin-left: 30px;
     margin: 5px;
-}
-a{
+}*/
+nav a{
     text-decoration: none; /*remover linha abaixo dos linkes*/
     text-transform: uppercase; /*todas letras maiusculas*/
     height: 100%;
+    width: 105px;
     color: white;
     display: flex;
     font-size: auto;
-    align-items: center;
-    padding: 0 10px 0 10px; /*10px na esquerda e 10px na direita*/
+    align-items: center; /*centraliza na vertical*/
+    justify-content: center; /*centraliza n horizontal*/
+    padding: 0 15px 0 15px; /*10px na esquerda e 10px na direita*/
 
 }
 
-a:hover{
-    color: black;
+nav a:hover{
     background-color: #A64B4B;
     
 }
